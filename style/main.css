@@ -1,0 +1,214 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+/*vaiaveis ^ */
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+/*base*/
+body {
+    background-color: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+    height: 100%;
+}
+header {
+    width: 100%;
+}
+header .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    position: fixed;
+    z-index: 1;
+    
+}
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 20px;
+}
+header nav {
+    margin-right: 20px;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+header nav:nth-child(){
+    margin-left: 1px;
+}
+header nav a {
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 20px;  
+
+}
+header nav a:hover {
+    color:#fff;
+}
+.perfil {
+    width:40px;
+    height: 40px;
+    background: url('/img/perfil.png');
+    background-size: 40px, 40px;
+    display: block;
+}
+.perfil:hover {
+    border: 2px solid white;
+    transition: .2s ease all;
+}
+/*movies*/
+.movie-top {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.50)100%), url('/img/75HgaphatW0PDI3XIHQWZUpbhn6.jpg');
+    min-height: 80%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.movie-top .description {
+    margin-top: 10px;
+    margin-bottom: 90px;
+
+}
+.title {
+    margin-top: 15%;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.button {
+    text-transform: uppercase;
+    background-color: rgba(0,0,0.50);
+    border:none;
+    color:white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.button:hover {
+    background-color: white;
+    color: rgb(51, 44, 44);
+}
+.button i {
+    margin-right:  8px;
+}
+main .container {
+    margin-left: 20px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+
+}
+.movie-top .container {
+    width: 70%;
+    height:100%
+}
+.logo {
+    display: block;
+    width: 150px;
+    height: 90px;
+    background: url('/img/netflix-logo/netflix-logo.svg');
+    background-size: 150px 90px;
+    text-indent: -9999px;
+}
+
+main {
+   
+    margin-top: 0px;
+height: 100%;
+z-index: -1;
+    
+}
+.carousel-movies {
+    width: 90%;
+    margin: 0 auto;
+  
+ margin-top: -15px;
+    
+}
+.carousel-top-rated {
+    width: 90%;
+    margin: 90px auto;
+
+    
+}
+.box-movie {
+    height: 100%;
+    width: 100%;
+    
+
+}
+.carousel-movies .item {
+    transition: transform .2s;
+    padding: 20px 10px 20px 10px;
+}
+.carousel-movies .item:hover {
+    transform: scale(1.1);
+  
+}
+.carousel-movies .item p {
+    background-color: rgba(0,0,0,.1);
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+.title-list {
+    margin: -90px 0 10px 30px;
+    font-weight: bold;
+}
+.divider {
+    margin-top: -150px;
+    width: 100%;
+    height: 200px;
+    background: rgb(20,20,20);
+background: -moz-linear-gradient(180deg, rgba(20,20,20,0) 0%, rgba(20,20,20,1) 80%, rgba(20,20,20,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(20,20,20,0) 0%, rgba(20,20,20,1) 80%, rgba(20,20,20,1) 100%);
+background: linear-gradient(180deg, rgba(20,20,20,0) 0%, rgba(20,20,20,1) 80%, rgba(20,20,20,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141414",endColorstr="#141414",GradientType=1);
+}
+.carousel-top-rated {
+    width:100%;
+}
+.carousel-top-rated .item {
+    width: 250px;
+    height: 150px;
+ 
+    perspective:  1000px;
+}
+.carousel-top-rated .item:hover .flipper{
+	transform: rotateY(180deg);
+}
+.carousel-top-rated .flipper{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .back{
+    transform: rotateY(180deg);
+}
