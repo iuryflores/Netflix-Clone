@@ -6,6 +6,6 @@ Recriei a interface do principal site de streaming mundial utilizando tecnologia
 
 Nesse projeto aprendi como estruturar um layout, técnicas de CSS3 com containers e variáveis, como posicionar os elementos com Flexbox e como utilizar plugins Jquery a favor da minha aplicação.
 
-(https://github.com/iuryflores/Netflix-Clone/blob/master/img/screenshot.jpg?raw=true)
+!scheenshot(https://github.com/iuryflores/Netflix-Clone/blob/master/img/screenshot.JPG?raw=true)
 
 
